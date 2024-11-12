@@ -10,6 +10,7 @@ import User from './pages/user/User';
 import Profile from './pages/profile/Profile';
 import Signup from './pages/user/signup';
 import Login from './pages/user/Login';
+import Footer from './header/footer';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route path='/signup' element={<Signup />} />
         <Route path='/Login' element={<Login />} />
       </Routes>
+      <Footer />
 
     </div>
   );
