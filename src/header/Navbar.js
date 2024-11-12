@@ -22,6 +22,7 @@ function Navbar() {
 
           <Link to='/wallet'><li>Wallet</li></Link>
           <Link to='/contact'><li>Contact Us</li></Link>
+          <Link to='/signup'><li>Sign Up</li></Link>
         </ul>
         {/* Hamburger or Close Icon */}
         <div className=' md:hidden z-10' onClick={handleClick}>
@@ -43,6 +44,7 @@ function Navbar() {
 
           <Link to='/wallet'><li className='hover:text-teal-700'>Wallet</li></Link>
           <Link to='/contact'><li className='hover:text-teal-700'>Contact Us</li></Link>
+          <Link to='/signup'><li className='hover:text-teal-700'>Sign Up</li></Link>
         </ul>
       </nav>
       {token == null ? <Login setToken={setToken} /> : null}

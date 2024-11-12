@@ -8,10 +8,12 @@ import Subscription from './pages/subscription/Subscription';
 import Wallet from './pages/wallet/Wallet';
 import User from './pages/user/User';
 import Profile from './pages/profile/Profile';
+import Signup from './pages/user/signup';
+import Login from './pages/user/Login';
 
 function App() {
   return (
-    <div className="App bg-rose-400	  w-full h-screen" >
+    <div className="App	  w-full h-screen" >
       <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />
@@ -21,6 +23,8 @@ function App() {
         <Route path='/user' element={<User />} />
         <Route path='/profile' element={<Profile />} />
         <Route path='/contact' element={<Contact />} />
+        <Route path='/signup' element={<Signup />} />
+        <Route path='/Login' element={<Login />} />
       </Routes>
 
     </div>

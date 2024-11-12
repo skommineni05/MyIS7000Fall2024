@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import axios from 'axios';
 
 import './Login.css';
+
 async function loginUser(credentials) {
   console.log("hello")
   console.log(JSON.stringify(credentials))
@@ -23,6 +24,8 @@ export default function Login({ setToken }) {
     setToken(token);
   }
   return (
+    <div className='mt-2'>
+    <div class="max-w-sm rounded overflow-hidden shadow-lg">
     <div className="login-wrapper">
       <h1>Please Log In</h1>
       <form onSubmit={handleSubmit}>
@@ -38,6 +41,8 @@ export default function Login({ setToken }) {
           <button type="submit">Submit</button>
         </div>
       </form>
+    </div>
+    </div>
     </div>
   )
 }
